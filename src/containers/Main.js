@@ -18,6 +18,7 @@ import Profile from "./profile/Profile";
 import {StyleProvider} from "../contexts/StyleContext";
 import {useLocalStorage} from "../hooks/useLocalStorage";
 import "./Main.scss";
+import Nineties from "../styles/90s";
 
 const Main = () => {
   const darkPref = window.matchMedia("(prefers-color-scheme: dark)");
@@ -27,7 +28,8 @@ const Main = () => {
     setIsDark(!isDark);
   };
 
-  return (
+  const styles = [
+  (
     <div className={isDark ? "dark-mode" : null}>
       <StyleProvider value={{isDark: isDark, changeTheme: changeTheme}}>
         <Header />
@@ -48,7 +50,11 @@ const Main = () => {
         <Top />
       </StyleProvider>
     </div>
-  );
+  ),
+  (<Nineties/>)
+  ]
+
+  return (styles[Math.floor(Math.random() * styles.length)]);
 };
 
 export default Main;

@@ -48,6 +48,18 @@
   background-color: $google;
 }
 
+.discord i {
+  background-color: $discord;
+}
+
+.spigotmc i {
+  background-color: $spigotmc;
+}
+
+.telegram i {
+  background-color: $telegram;
+}
+
 .twitter i {
   background-color: $twitter;
 }
@@ -78,6 +90,9 @@
 .instagram i:hover,
 .stack-overflow i:hover,
 .kaggle i:hover,
+.discord i:hover,
+.telegram i:hover,
+.spigotmc i:hover,
 .medium i:hover {
   background-color: $textColor;
 }
