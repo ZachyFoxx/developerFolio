@@ -5,12 +5,58 @@
 
 body {
     background-color: black;
-    color: rgb(0, 255, 0);
+    color: rgb(255, 255, 255);
+    margin: auto;
+}
+
+#grad1 {
+    background: red;
+    background: -webkit-linear-gradient(left, orange , yellow, green, cyan, blue, violet);
+    background: -o-linear-gradient(right, orange, yellow, green, cyan, blue, violet);
+    background: -moz-linear-gradient(right, orange, yellow, green, cyan, blue, violet);
+    background: linear-gradient(to right, orange , yellow, green, cyan, blue, violet);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 105px;
+    border-style: dashed;
+    border-color: violet;
+    border-top-style: dashed;
+    border-right-style: none;
+    border-bottom-style: dashed;
+    border-left-style: none;
+    font-family: Impact;
+    text-align: center;
+    letter-spacing: 4rem;
+}
+
+#grad2 {
+    background: red;
+    background: -webkit-linear-gradient(left, orange , yellow, green, cyan, blue, violet);
+    background: -o-linear-gradient(right, orange, yellow, green, cyan, blue, violet);
+    background: -moz-linear-gradient(right, orange, yellow, green, cyan, blue, violet);
+    background: linear-gradient(to right, orange , yellow, green, cyan, blue, violet);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 50px;
+    border-style: dashed;
+    border-color: rgb(0, 251, 255);
+    border-top-style: dashed;
+    border-right-style: none;
+    border-bottom-style: dashed;
+    border-left-style: none;
+    padding: 3%;
+    text-align: center;
+}
+
+.center {
+    margin: auto;
+    width: 45%;
+    padding: 3%;
 }
 
 a {
-    color: rgb(0, 255, 255);
+    color: rgb(0, 255, 0);
 }
 a:hover {
-    color: beige;
+    color: rgb(33, 189, 33);
 }
