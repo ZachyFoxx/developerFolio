@@ -5,11 +5,10 @@ import "./scss/90s.scss";
 function Nineties() {
   return (
     <Headroom>
-      <div>
+      <div id="ninties">
         <br></br>
         <br></br>
-        <br></br>
-        <h1 class="center" id="grad1">
+        <h1 class="center text animated shake" id="grad1">
           ZACHERY
         </h1>
         <div class="center">
@@ -17,15 +16,15 @@ function Nineties() {
             I love emergency medicine and the idea of tricking rocks into doing
             a ton of math
           </p>
-          <h2 id="grad2">What I Do</h2>
+          <h2 id="grad2" class="text animated pulse">What I Do</h2>
           <div className="skills">
             <p>TRICK ROCKS INTO DOING LOTS OF MATH FOR VIDEO GAMES</p>
-            <p>⚡ Advanced with Java and Kotlin</p>
-            <p>⚡ Highly experienced with with SpigotMC and dirivatives</p>
-            <p>⚡ Great at causing bugs and then solving them</p>
-            <p>⚡ Vauge understanding of emergency medicine</p>
+            <p>- Advanced with Java and Kotlin</p>
+            <p>- Highly experienced with with SpigotMC and dirivatives</p>
+            <p>- Great at causing bugs and then solving them</p>
+            <p>- Vauge understanding of emergency medicine</p>
           </div>
-          <h2 id="grad2">Get In Contact</h2>
+          <h2 id="grad2" class="text animated swing">Get In Contact</h2>
           <div className="socials">
             <p>
               {" "}

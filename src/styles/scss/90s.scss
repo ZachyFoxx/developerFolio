@@ -4,59 +4,207 @@
 }
 
 body {
-    background-color: black;
-    color: rgb(255, 255, 255);
-    margin: auto;
+  background-color: black;
+  color: rgb(255, 255, 255);
+  margin: auto;
+}
+
+#ninties {
+  cursor: url(http://cur.cursors-4u.net/nature/nat-10/nat927.ani),
+    url(http://cur.cursors-4u.net/nature/nat-10/nat927.png), progress !important;
+  background-color: black;
+  background-image: url("../../assets/images/bg_stars.gif");
+  color: #ff0
+}
+
+.text {
+  text-align: center;
+  margin-top: 56px;
+  color: #fff;
+  font-size: 1em;
+  font-family: sans-serif;
+  text-transform: uppercase;
+}
+
+.animated {
+  animation-duration: 2.5s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-15px);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(15px);
+  }
+}
+.shake {
+  animation-name: shake;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.pulse {
+  animation-name: pulse;
+  animation-duration: 1s;
+}
+
+@keyframes swing {
+  20% {
+    transform: rotate(6deg);
+  }
+  40% {
+    transform: rotate(-5.5deg);
+  }
+  60% {
+    transform: rotate(5deg);
+  }
+  80% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.swing {
+  transform-origin: top center;
+  animation-name: swing;
 }
 
 #grad1 {
-    background: red;
-    background: -webkit-linear-gradient(left, orange , yellow, green, cyan, blue, violet);
-    background: -o-linear-gradient(right, orange, yellow, green, cyan, blue, violet);
-    background: -moz-linear-gradient(right, orange, yellow, green, cyan, blue, violet);
-    background: linear-gradient(to right, orange , yellow, green, cyan, blue, violet);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 105px;
-    border-style: dashed;
-    border-color: violet;
-    border-top-style: dashed;
-    border-right-style: none;
-    border-bottom-style: dashed;
-    border-left-style: none;
-    font-family: Impact;
-    text-align: center;
-    letter-spacing: 4rem;
+  background: red;
+  background: -webkit-linear-gradient(
+    left,
+    orange,
+    yellow,
+    green,
+    cyan,
+    blue,
+    violet
+  );
+  background: -o-linear-gradient(
+    right,
+    orange,
+    yellow,
+    green,
+    cyan,
+    blue,
+    violet
+  );
+  background: -moz-linear-gradient(
+    right,
+    orange,
+    yellow,
+    green,
+    cyan,
+    blue,
+    violet
+  );
+  background: linear-gradient(
+    to right,
+    orange,
+    yellow,
+    green,
+    cyan,
+    blue,
+    violet
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 105px;
+  border-style: dashed;
+  border-color: violet;
+  border-top-style: dashed;
+  border-right-style: none;
+  border-bottom-style: dashed;
+  border-left-style: none;
+  font-family: Impact;
+  text-align: center;
+  letter-spacing: 4rem;
 }
 
 #grad2 {
-    background: red;
-    background: -webkit-linear-gradient(left, orange , yellow, green, cyan, blue, violet);
-    background: -o-linear-gradient(right, orange, yellow, green, cyan, blue, violet);
-    background: -moz-linear-gradient(right, orange, yellow, green, cyan, blue, violet);
-    background: linear-gradient(to right, orange , yellow, green, cyan, blue, violet);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 50px;
-    border-style: dashed;
-    border-color: rgb(0, 251, 255);
-    border-top-style: dashed;
-    border-right-style: none;
-    border-bottom-style: dashed;
-    border-left-style: none;
-    padding: 3%;
-    text-align: center;
+  background: red;
+  background: -webkit-linear-gradient(
+    left,
+    orange,
+    yellow,
+    green,
+    cyan,
+    blue,
+    violet
+  );
+  background: -o-linear-gradient(
+    right,
+    orange,
+    yellow,
+    green,
+    cyan,
+    blue,
+    violet
+  );
+  background: -moz-linear-gradient(
+    right,
+    orange,
+    yellow,
+    green,
+    cyan,
+    blue,
+    violet
+  );
+  background: linear-gradient(
+    to right,
+    orange,
+    yellow,
+    green,
+    cyan,
+    blue,
+    violet
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 50px;
+  border-style: dashed;
+  border-color: rgb(0, 251, 255);
+  border-top-style: dashed;
+  border-right-style: none;
+  border-bottom-style: dashed;
+  border-left-style: none;
+  padding: 3%;
+  text-align: center;
 }
 
 .center {
-    margin: auto;
-    width: 45%;
-    padding: 3%;
+  margin: auto;
+  width: 45%;
+  padding: 3%;
 }
 
 a {
-    color: rgb(0, 255, 0);
+  color: rgb(0, 255, 0);
 }
 a:hover {
-    color: rgb(33, 189, 33);
+  color: rgb(33, 189, 33);
 }
